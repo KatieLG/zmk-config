@@ -2,5 +2,5 @@
 
 ZMK configuration for a wireless Corne split keyboard.
 
-- Controller: `sparkfun_pro_micro_rp2040`
+- Controller: `nice_nano_v2`
 - Keymap: `config/corne.keymap`
