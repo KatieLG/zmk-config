@@ -34,6 +34,8 @@
         email: email {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <20>;
+            tap-ms = <10>;
             bindings = <&kp COLON>, <&kp E>, <&kp M>, <&kp A>, <&kp I>, <&kp L>;
         };
     };
