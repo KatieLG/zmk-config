@@ -9,13 +9,13 @@
 #include <dt-bindings/zmk/bt.h>
 
 &mt {
-    tapping-term-ms = <130>;
+    tapping-term-ms = <100>;
     quick-tap-ms = <200>;
     flavor = "balanced";
 };
 
 &lt {
-    tapping-term-ms = <130>;
+    tapping-term-ms = <200>;
     quick-tap-ms = <200>;
     flavor = "balanced";
 };
@@ -37,33 +37,35 @@
         compatible = "zmk,combos";
 
         // Q+W → # (UK: NON_US_HASH)
-        combo_hash  { timeout-ms = <50>; key-positions = <1 2>;      bindings = <&kp NON_US_HASH>; };
+        combo_hash  { timeout-ms = <30>; key-positions = <1 2>;      bindings = <&kp NON_US_HASH>; };
         // V+B → _
-        combo_under { timeout-ms = <50>; key-positions = <28 29>;    bindings = <&kp UNDER>; };
+        combo_under { timeout-ms = <30>; key-positions = <28 29>;    bindings = <&kp UNDER>; };
         // Y+U → (
-        combo_lpar  { timeout-ms = <50>; key-positions = <6 7>;      bindings = <&kp LPAR>; };
+        combo_lpar  { timeout-ms = <30>; key-positions = <6 7>;      bindings = <&kp LPAR>; };
         // U+I → )
-        combo_rpar  { timeout-ms = <50>; key-positions = <7 8>;      bindings = <&kp RPAR>; };
+        combo_rpar  { timeout-ms = <25>; key-positions = <7 8>;      bindings = <&kp RPAR>; };
         // H+J → [
-        combo_lbkt  { timeout-ms = <50>; key-positions = <18 19>;    bindings = <&kp LBKT>; };
+        combo_lbkt  { timeout-ms = <30>; key-positions = <18 19>;    bindings = <&kp LBKT>; };
         // J+K → ]
-        combo_rbkt  { timeout-ms = <50>; key-positions = <19 20>;    bindings = <&kp RBKT>; };
+        combo_rbkt  { timeout-ms = <30>; key-positions = <19 20>;    bindings = <&kp RBKT>; };
         // N+M → {
-        combo_lbrc  { timeout-ms = <50>; key-positions = <30 31>;    bindings = <&kp LBRC>; };
+        combo_lbrc  { timeout-ms = <30>; key-positions = <30 31>;    bindings = <&kp LBRC>; };
         // M+, → }
-        combo_rbrc  { timeout-ms = <50>; key-positions = <31 32>;    bindings = <&kp RBRC>; };
+        combo_rbrc  { timeout-ms = <30>; key-positions = <31 32>;    bindings = <&kp RBRC>; };
         // U+I+O → :
-        combo_colon { timeout-ms = <50>; key-positions = <7 8 9>;    bindings = <&kp COLON>; };
+        combo_colon { timeout-ms = <30>; key-positions = <7 8 9>;    bindings = <&kp COLON>; };
         // ,+. → <
-        combo_lt    { timeout-ms = <50>; key-positions = <32 33>;    bindings = <&kp LS(COMMA)>; };
+        combo_lt    { timeout-ms = <30>; key-positions = <32 33>;    bindings = <&kp LS(COMMA)>; };
         // .+/ → >
-        combo_gt    { timeout-ms = <50>; key-positions = <33 34>;    bindings = <&kp LS(DOT)>; };
+        combo_gt    { timeout-ms = <30>; key-positions = <33 34>;    bindings = <&kp LS(DOT)>; };
         // M+,+. → ~ (UK: shift+NON_US_HASH)
-        combo_tilde { timeout-ms = <50>; key-positions = <31 32 33>; bindings = <&kp LS(NON_US_HASH)>; };
+        combo_tilde { timeout-ms = <30>; key-positions = <31 32 33>; bindings = <&kp LS(NON_US_HASH)>; };
         // J+K+L → ` shifted
-        combo_grave { timeout-ms = <50>; key-positions = <19 20 21>; bindings = <&kp LS(GRAVE)>; };
+        combo_grave { timeout-ms = <30>; key-positions = <19 20 21>; bindings = <&kp LS(GRAVE)>; };
         // N+M+, → Ctrl+G
-        combo_ctrlg { timeout-ms = <50>; key-positions = <30 31 32>; bindings = <&kp LC(G)>; };
+        combo_ctrlg  { timeout-ms = <30>; key-positions = <30 31 32>; bindings = <&kp LC(G)>; };
+        // right 3 thumb keys → numpad layer
+        combo_numpad { timeout-ms = <30>; key-positions = <39 40 41>; bindings = <&to 3>; layers = <0>; };
     };
 
     keymap {
@@ -75,7 +77,7 @@
 // │    LT1/ESC      │     A      │   S   │   D   │    LT2/F    │  LT4/G  │   │    H    │       J        │     K     │    L    │       ;       │    SFT/'      │
 // │    SFT/`        │     Z      │   X   │   C   │      V      │    B    │   │    N    │       M        │     ,     │    .    │     ALT/      │       =       │
 // ╰─────────────────┴────────────┴───────┼───────┼─────────────┼─────────┤   ├─────────┼────────────────┼───────────┴─────────┴───────────────┴───────────────╯
-//                                        │  ---  │   SFT/ENT   │   GUI   │   │ CTL/BSP │      SPC       │    ---    │
+//                                        │  LALT │   SFT/ENT   │   GUI   │   │ CTL/BSP │      SPC       │   RALT    │
 //                                        ╰───────┴─────────────┴─────────╯   ╰─────────┴────────────────┴───────────╯
             bindings = <
    &kp TAB          &kp Q       &kp W  &kp E    &kp R          &kp T       &kp Y          &kp U      &kp I      &kp O    &kp P          &kp DEL
@@ -119,17 +121,17 @@
 
         numpad_layer {
 // ╭───────┬───────┬───────┬───────┬───────┬───────╮   ╭───────┬────────┬────────┬────────┬─────────────┬───────╮
-// │       │       │       │       │       │       │   │       │   7    │   8    │   9    │      /      │       │
-// │       │       │       │       │       │       │   │       │   4    │   5    │   6    │      *      │       │
-// │       │       │       │       │       │       │   │       │   1    │   2    │   3    │      -      │   +   │
+// │       │       │       │       │       │       │   │       │   7    │   8    │   9    │      -      │   +   │
+// │       │       │       │       │       │       │   │       │   4    │   5    │   6    │      *      │   =   │
+// │       │       │       │       │       │       │   │       │   1    │   2    │   3    │      /      │       │
 // ╰───────┴───────┴───────┼───────┼───────┼───────┤   ├───────┼────────┼────────┴────────┴─────────────┴───────╯
-//                         │       │       │       │   │   0   │        │        │
+//                         │       │       │       │   │ DEF   │   0    │   .    │
 //                         ╰───────┴───────┴───────╯   ╰───────┴────────┴────────╯
             bindings = <
-   &trans  &trans  &trans  &trans  &trans  &trans   &trans  &kp N7  &kp N8  &kp N9  &kp FSLH     &trans
-   &trans  &trans  &trans  &trans  &trans  &trans   &trans  &kp N4  &kp N5  &kp N6  &kp ASTERISK &trans
-   &trans  &trans  &trans  &trans  &trans  &trans   &trans  &kp N1  &kp N2  &kp N3  &kp MINUS    &kp PLUS
-                           &trans  &trans  &trans   &kp N0  &trans  &trans
+   &trans  &trans  &trans  &trans  &trans  &trans   &trans  &kp N7  &kp N8  &kp N9  &kp MINUS    &kp PLUS
+   &trans  &trans  &trans  &trans  &trans  &trans   &trans  &kp N4  &kp N5  &kp N6  &kp ASTERISK &kp EQUAL
+   &trans  &trans  &trans  &trans  &trans  &trans   &trans  &kp N1  &kp N2  &kp N3  &kp FSLH     &trans
+                           &trans  &trans  &trans   &to 0   &kp N0  &kp DOT
             >;
         };
 
