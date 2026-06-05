@@ -34,7 +34,7 @@
         email: email {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <20>;
+            wait-ms = <10>;
             tap-ms = <10>;
             bindings = <&kp COLON>, <&kp E>, <&kp M>, <&kp A>, <&kp I>, <&kp L>;
         };
@@ -79,8 +79,8 @@
         combo_plus  { timeout-ms = <30>; key-positions = <22 23>; bindings = <&kp PLUS>; };
         // right 3 thumb keys → numpad layer
         combo_numpad { timeout-ms = <50>; key-positions = <39 40 41>; bindings = <&to 3>; layers = <0>; };
-        // left 3 thumb keys → toggle macro layer
-        combo_winlyr { timeout-ms = <50>; key-positions = <36 37 38>; bindings = <&tog 5>; };
+        // left 3 thumb keys → macro layer (momentary)
+        combo_winlyr { timeout-ms = <50>; key-positions = <36 37 38>; bindings = <&mo 5>; };
     };
 
     keymap {
