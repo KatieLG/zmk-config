@@ -102,17 +102,17 @@
 
         sym_layer {
 // ╭───────┬───────┬───────┬───────┬───────┬───────╮   ╭───────┬───────┬───────┬───────┬───────┬───────╮
-// │   !   │   "   │   £   │   $   │   %   │   ^   │   │   &   │   *   │   (   │   )   │   _   │   +   │
+// │       │   !   │   "   │   £   │   $   │   %   │   │   ^   │   &   │   *   │   _   │   +   │       │
 // │       │       │       │       │       │       │   │   `   │   ?   │   ±   │   §   │       │       │
 // │       │       │       │       │       │       │   │       │       │       │       │       │       │
 // ╰───────┴───────┴───────┼───────┼───────┼───────┤   ├───────┼───────┼───────┴───────┴───────┴───────╯
 //                         │       │       │       │   │       │       │       │
 //                         ╰───────┴───────┴───────╯   ╰───────┴───────┴───────╯
             bindings = <
-   &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET   &kp AMPS     &kp STAR   &kp LPAR           &kp RPAR    &kp UNDER  &kp PLUS
-   &trans    &trans  &trans    &trans    &trans     &trans      &kp GRAVE    &kp QMARK  &kp LA(LS(EQUAL))  &kp LA(N6)  &trans     &trans
-   &trans    &trans  &trans    &trans    &trans     &trans      &trans       &trans     &trans             &trans      &trans     &trans
-                               &trans    &trans     &trans      &trans       &trans     &trans
+   &trans    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT   &kp CARET    &kp AMPS   &kp STAR           &kp UNDER   &kp PLUS   &trans
+   &trans    &trans    &trans  &trans    &trans    &trans      &kp GRAVE    &kp QMARK  &kp LA(LS(EQUAL))  &kp LA(N6)  &trans     &trans
+   &trans    &trans    &trans  &trans    &trans    &trans      &trans       &trans     &trans             &trans      &trans     &trans
+                               &trans    &trans    &trans      &trans       &trans     &trans
             >;
         };
 
