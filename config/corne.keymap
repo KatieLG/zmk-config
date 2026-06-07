@@ -38,6 +38,13 @@
             tap-ms = <10>;
             bindings = <&kp COLON>, <&kp E>, <&kp M>, <&kp A>, <&kp I>, <&kp L>;
         };
+        cmail: cmail {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&kp COLON>, <&kp C>, <&kp M>, <&kp A>, <&kp I>, <&kp L>;
+        };
     };
 
     combos {
@@ -166,19 +173,19 @@
             >;
         };
 
-        espanso_layer {
+        macro_bt_layer {
 // ╭───────┬───────┬───────┬────────┬───────┬───────╮   ╭───────┬───────┬───────┬───────┬───────┬───────╮
-// │       │       │       │        │       │       │   │ email │       │       │       │       │       │
-// │       │       │       │        │       │       │   │       │       │       │       │       │       │
-// │       │       │       │        │       │       │   │       │       │       │       │       │       │
+// │       │       │       │        │       │       │   │ email │ cmail │       │       │       │ BT 0  │
+// │       │       │       │        │       │       │   │       │       │       │       │       │ BT 1  │
+// │       │       │       │        │       │       │   │ BTPRV │ BTNXT │ BTCLR │       │       │ BT 2  │
 // ╰───────┴───────┴───────┼────────┼───────┼───────┤   ├───────┼───────┼───────┴───────┴───────┴───────╯
 //                         │        │       │       │   │       │       │       │
 //                         ╰────────┴───────┴───────╯   ╰───────┴───────┴───────╯
             bindings = <
-   &trans  &trans  &trans  &trans  &trans  &trans   &email  &trans  &trans  &trans  &trans  &trans
-   &trans  &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans
-   &trans  &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans
-                           &trans  &trans  &trans   &trans  &trans  &trans
+   &trans  &trans  &trans  &trans  &trans  &trans   &email      &trans      &trans      &trans  &trans  &bt BT_SEL 0
+   &trans  &trans  &trans  &trans  &trans  &trans   &trans      &trans      &trans      &trans  &trans  &bt BT_SEL 1
+   &trans  &trans  &trans  &trans  &trans  &trans   &bt BT_PRV  &bt BT_NXT  &bt BT_CLR  &trans  &trans  &bt BT_SEL 2
+                           &trans  &trans  &trans   &trans      &trans      &trans
             >;
         };
     };
