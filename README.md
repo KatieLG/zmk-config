@@ -11,7 +11,7 @@ Wireless Corne keyboard ZMK configuration.
 // ╭─────────┬─────┬─────┬─────┬───────┬─────╮   ╭──────┬─────┬─────┬─────┬─────┬─────╮
 // │   TAB   │  Q  │  W  │  E  │   R   │LT3/T│   │  Y   │  U  │  I  │  O  │  P  │ DEL │
 // │ LT1/ESC │  A  │  S  │  D  │ LT2/F │LT1/G│   │LT1/H │  J  │  K  │  L  │  ;  │SFT/'│
-// │ SFT/`   │  Z  │  X  │  C  │  V    │LT4/B│   │  N   │  M  │  ,  │  .  │  /  │  =  │
+// │ SFT/`   │  Z  │  X  │  C  │  V    │LT4/B│   │  N   │  M  │  ,  │  .  │  /  │LT3/=│
 // ╰─────────┴─────┴─────┼─────┼───────┼─────┤   ├──────┼─────┼─────┼─────┴─────┴─────╯
 //                       │ LALT│SFT/ENT│ GUI │   │CT/BSP│ SPC │ RALT│
 //                       ╰─────┴───────┴─────╯   ╰──────┴─────┴─────╯
@@ -62,6 +62,7 @@ Wireless Corne keyboard ZMK configuration.
 | Keys | Result |
 | --- | --- |
 | Q + W | `#` |
+| W + E | `"` |
 | V + B | `_` |
 | Y + U | `(` |
 | U + I | `)` |
