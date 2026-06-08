@@ -54,5 +54,40 @@ Wireless Corne keyboard ZMK configuration.
 // │       │       │       │       │       │       │   │ BTPRV │ BTNXT │ BTCLR │       │       │ BT 2  │
 // ╰───────┴───────┴───────┼───────┼───────┼───────┤   ├───────┼───────┼───────┴───────┴───────┴───────╯
 //                         │       │       │       │   │       │       │       │
-//                         ╰───────┴───────┴───────╯   ╰───────┴───────┴───────╯
+//                         ╰───────┴───────┴───────┴───────╯   ╰───────┴───────┴───────╯
 ```
+
+## Combos
+
+| Keys | Result |
+| --- | --- |
+| Q + W | `#` |
+| V + B | `_` |
+| Y + U | `(` |
+| U + I | `)` |
+| H + J | `[` |
+| J + K | `]` |
+| N + M | `{` |
+| M + , | `}` |
+| U + I + O | `:` |
+| , + . | `<` |
+| . + / | `>` |
+| M + , + . | `~` |
+| J + K + L | `|` |
+| N + M + , | `Ctrl+G` |
+| ` + Z | `\` |
+| P + DEL | `-` |
+| ; + ' | `+` |
+| right 3 thumb keys | `numpad layer` |
+| left 3 thumb keys | `macro layer` |
+
+## Layer toggling
+
+| Key | Effect |
+| --- | --- |
+| Caps | Tap: `ESC`, hold: `sym` layer |
+| F | Tap: `F`, hold: `nav` layer |
+| T | Tap: `T`, hold: `numpad` layer |
+| B | Tap: `B`, hold: `win` layer |
+| right 3 thumb keys | toggle `numpad` layer |
+| left 3 thumb keys | momentary `macro` layer |
