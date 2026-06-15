@@ -8,13 +8,13 @@ Wireless Corne keyboard ZMK configuration.
 ## Layout
 
 ```text
-// ╭─────────┬─────┬─────┬─────┬───────┬─────╮   ╭──────┬─────┬─────┬─────┬─────┬─────╮
-// │   TAB   │  Q  │  W  │  E  │   R   │LT3/T│   │  Y   │  U  │  I  │  O  │  P  │ DEL │
-// │ LT1/ESC │  A  │  S  │  D  │ LT2/F │LT1/G│   │LT1/H │  J  │  K  │  L  │  ;  │SFT/'│
-// │ SFT/`   │  Z  │  X  │  C  │  V    │LT4/B│   │  N   │  M  │  ,  │  .  │  /  │LT3/=│
-// ╰─────────┴─────┴─────┼─────┼───────┼─────┤   ├──────┼─────┼─────┼─────┴─────┴─────╯
-//                       │ LALT│SFT/ENT│ GUI │   │CT/BSP│ SPC │ RALT│
-//                       ╰─────┴───────┴─────╯   ╰──────┴─────┴─────╯
+// ╭─────┬─────┬─────┬─────┬─────┬─────╮   ╭─────┬─────┬─────┬─────┬─────┬─────╮
+// │ TAB │  Q  │  W  │  E  │  R  │LT3/T│   │  Y  │  U  │  I  │  O  │  P  │ DEL │
+// │1/ESC│  A  │  S  │  D  │LT2/F│LT1/G│   │L1/H │  J  │  K  │  L  │  ;  │SFT/'│
+// │SFT/`│  Z  │  X  │  C  │ V   │LT4/B│   │  N  │  M  │  ,  │  .  │  /  │LT3/=│
+// ╰─────┴─────┴─────┼─────┼─────┼─────┤   ├─────┼─────┼─────┼─────┴─────┴─────╯
+//                   │ LALT│SF/RT│ GUI │   │CT/BS│ SPC │ RALT│
+//                   ╰─────┴─────┴─────╯   ╰─────┴─────┴─────╯
 
 // ╭─────┬─────┬─────┬─────┬─────┬─────╮   ╭─────┬─────┬─────┬─────┬─────┬─────╮
 // │     │  !  │  "  │  £  │  $  │  %  │   │  ^  │  &  │  *  │  _  │  +  │     │
@@ -59,36 +59,40 @@ Wireless Corne keyboard ZMK configuration.
 
 ## Combos
 
-| Keys | Result |
-| --- | --- |
-| Q + W | `#` |
-| W + E | `"` |
-| V + B | `_` |
-| Y + U | `(` |
-| U + I | `)` |
-| H + J | `[` |
-| J + K | `]` |
-| N + M | `{` |
-| M + , | `}` |
-| U + I + O | `:` |
-| , + . | `<` |
-| . + / | `>` |
-| M + , + . | `~` |
-| J + K + L | `|` |
-| N + M + , | `Ctrl+G` |
-| ` + Z | `\` |
-| P + DEL | `-` |
-| ; + ' | `+` |
+| Keys               | Result         |
+| ------------------ | -------------- |
+| TAB + Q            | `@`            |
+| Q + W              | `#`            |
+| W + E              | `"`            |
+| V + B              | `_`            |
+| Y + U              | `(`            |
+| U + I              | `)`            |
+| H + J              | `[`            |
+| J + K              | `]`            |
+| N + M              | `{`            |
+| M + ,              | `}`            |
+| U + I + O          | `:`            |
+| , + .              | `<`            |
+| . + /              | `>`            |
+| M + , + .          | `~`            |
+| J + K + L          | `\|`           |
+| N + M + ,          | `Ctrl+G`       |
+| ` + Z              | `\`            |
+| P + DEL            | `-`            |
+| ; + '              | `+`            |
 | right 3 thumb keys | `numpad layer` |
-| left 3 thumb keys | `macro layer` |
+| left 3 thumb keys  | `macro layer`  |
 
 ## Layer toggling
 
-| Key | Effect |
-| --- | --- |
-| Caps | Tap: `ESC`, hold: `sym` layer |
-| F | Tap: `F`, hold: `nav` layer |
-| T | Tap: `T`, hold: `numpad` layer |
-| B | Tap: `B`, hold: `win` layer |
-| right 3 thumb keys | toggle `numpad` layer |
-| left 3 thumb keys | momentary `macro` layer |
+| Key                | Effect                         |
+| ------------------ | ------------------------------ |
+| Caps               | Tap: `ESC`, hold: `sym` layer  |
+| G                  | Tap: `G`, hold: `sym` layer    |
+| H                  | Tap: `H`, hold: `sym` layer    |
+| F                  | Tap: `F`, hold: `nav` layer    |
+| T                  | Tap: `T`, hold: `numpad` layer |
+| =                  | Tap: `=`, hold: `numpad` layer |
+| B                  | Tap: `B`, hold: `win` layer    |
+| right 3 thumb keys | toggle `numpad` layer          |
+| left 3 thumb keys  | momentary `macro` layer        |
