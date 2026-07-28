@@ -99,7 +99,7 @@
         // N+M+, → Ctrl+G
         combo_ctrlg  { timeout-ms = <50>; key-positions = <30 31 32>; bindings = <&kp LC(G)>; };
         // `+Z → \
-        combo_bslh  { timeout-ms = <30>; key-positions = <24 25>; bindings = <&kp NON_US_BSLH>; };
+        combo_bslh  { timeout-ms = <50>; key-positions = <24 25>; bindings = <&kp NON_US_BSLH>; };
         // P+DEL → -
         combo_minus { timeout-ms = <30>; key-positions = <10 11>; bindings = <&kp MINUS>; };
         // ;+' → +
