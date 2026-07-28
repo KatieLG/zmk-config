@@ -64,6 +64,7 @@ Wireless Corne keyboard ZMK configuration.
 | TAB + Q            | `@`            |
 | Q + W              | `#`            |
 | W + E              | `"`            |
+| R + T              | `*`            |
 | V + B              | `_`            |
 | Y + U              | `(`            |
 | U + I              | `)`            |
@@ -77,7 +78,7 @@ Wireless Corne keyboard ZMK configuration.
 | M + , + .          | `~`            |
 | J + K + L          | `\|`           |
 | N + M + ,          | `Ctrl+G`       |
-| ` + Z              | `\`            |
+| Z + X              | `\`            |
 | P + DEL            | `-`            |
 | ; + '              | `+`            |
 | right 3 thumb keys | `numpad layer` |

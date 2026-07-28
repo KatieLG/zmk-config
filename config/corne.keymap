@@ -71,6 +71,8 @@
         combo_hash  { timeout-ms = <50>; key-positions = <1 2>;      bindings = <&kp NON_US_HASH>; };
         // W+E → "
         combo_dblquote { timeout-ms = <25>; key-positions = <2 3>;   bindings = <&kp AT>; };
+        // R+T → *
+        combo_star  { timeout-ms = <30>; key-positions = <4 5>;      bindings = <&kp ASTERISK>; };
         // V+B → _
         combo_under { timeout-ms = <50>; key-positions = <28 29>;    bindings = <&kp UNDER>; };
         // Y+U → (
@@ -98,8 +100,8 @@
         combo_pipe { timeout-ms = <50>; key-positions = <19 20 21>; bindings = <&kp LS(GRAVE)>; };
         // N+M+, → Ctrl+G
         combo_ctrlg  { timeout-ms = <50>; key-positions = <30 31 32>; bindings = <&kp LC(G)>; };
-        // `+Z → \
-        combo_bslh  { timeout-ms = <50>; key-positions = <24 25>; bindings = <&kp NON_US_BSLH>; };
+        // Z+X → \
+        combo_bslh  { timeout-ms = <50>; key-positions = <25 26>; bindings = <&kp NON_US_BSLH>; };
         // P+DEL → -
         combo_minus { timeout-ms = <30>; key-positions = <10 11>; bindings = <&kp MINUS>; };
         // ;+' → +
